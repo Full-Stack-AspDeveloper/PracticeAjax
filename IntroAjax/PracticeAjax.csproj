@@ -1,0 +1,280 @@
+﻿<Project ToolsVersion="15.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props" Condition="Exists('..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props')" />
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{95FD7AAE-6B7B-4E1F-AA37-DC3B039FEE93}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>IntroAjax</RootNamespace>
+    <AssemblyName>IntroAjax</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <UseIISExpress>true</UseIISExpress>
+    <Use64BitIISExpress />
+    <IISExpressSSLPort>44320</IISExpressSSLPort>
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+    <UseGlobalApplicationHostFile />
+    <NuGetPackageImportStamp>
+    </NuGetPackageImportStamp>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="AjaxControlToolkit, Version=20.1.0.0, Culture=neutral, PublicKeyToken=28f01b0e84b6d53e, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\Documents\ASP.NET AJAX Control Toolkit\Bin\AjaxControlToolkit.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.CodeDom.Providers.DotNetCompilerPlatform">
+      <HintPath>..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\lib\net45\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="AlwaysVosibleControl.aspx" />
+    <Content Include="AutoCompleteExtender.aspx" />
+    <Content Include="ColorPickerControl.aspx" />
+    <Content Include="ConfirmButtonExtenderControl.aspx" />
+    <Content Include="css\style.css" />
+    <Content Include="DrpShadowControl.aspx" />
+    <Content Include="FilteredTextBox.aspx" />
+    <Content Include="HoverMenuControl.aspx" />
+    <Content Include="HTMLEditor.aspx" />
+    <Content Include="image\animation.gif" />
+    <Content Include="image\dislike.jpg" />
+    <Content Include="image\fillstar.png" />
+    <Content Include="image\giphy.gif" />
+    <Content Include="image\holestar.png" />
+    <Content Include="image\Like.jpg" />
+    <Content Include="image\Loading_icon.gif" />
+    <Content Include="image\Umang %282%29.jpg" />
+    <Content Include="ListSearchControl.aspx" />
+    <Content Include="LoadMoreDataButton.aspx" />
+    <Content Include="Masked_Edit_Extender_With_validaion.aspx" />
+    <Content Include="ModalPopup.aspx" />
+    <Content Include="PasswordStrenght.aspx" />
+    <Content Include="Rating.aspx" />
+    <Content Include="ToggleButton.aspx" />
+    <Content Include="WaterMarkTextBox.aspx" />
+    <Content Include="Web.config" />
+    <Content Include="WebForm2.aspx" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AlwaysVosibleControl.aspx.cs">
+      <DependentUpon>AlwaysVosibleControl.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AlwaysVosibleControl.aspx.designer.cs">
+      <DependentUpon>AlwaysVosibleControl.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="AutoCompleteExtender.aspx.cs">
+      <DependentUpon>AutoCompleteExtender.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AutoCompleteExtender.aspx.designer.cs">
+      <DependentUpon>AutoCompleteExtender.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ColorPickerControl.aspx.cs">
+      <DependentUpon>ColorPickerControl.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ColorPickerControl.aspx.designer.cs">
+      <DependentUpon>ColorPickerControl.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ConfirmButtonExtenderControl.aspx.cs">
+      <DependentUpon>ConfirmButtonExtenderControl.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ConfirmButtonExtenderControl.aspx.designer.cs">
+      <DependentUpon>ConfirmButtonExtenderControl.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="DrpShadowControl.aspx.cs">
+      <DependentUpon>DrpShadowControl.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="DrpShadowControl.aspx.designer.cs">
+      <DependentUpon>DrpShadowControl.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="FilteredTextBox.aspx.cs">
+      <DependentUpon>FilteredTextBox.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="FilteredTextBox.aspx.designer.cs">
+      <DependentUpon>FilteredTextBox.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="HoverMenuControl.aspx.cs">
+      <DependentUpon>HoverMenuControl.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="HoverMenuControl.aspx.designer.cs">
+      <DependentUpon>HoverMenuControl.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="HTMLEditor.aspx.cs">
+      <DependentUpon>HTMLEditor.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="HTMLEditor.aspx.designer.cs">
+      <DependentUpon>HTMLEditor.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ListSearchControl.aspx.cs">
+      <DependentUpon>ListSearchControl.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ListSearchControl.aspx.designer.cs">
+      <DependentUpon>ListSearchControl.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="LoadMoreDataButton.aspx.cs">
+      <DependentUpon>LoadMoreDataButton.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="LoadMoreDataButton.aspx.designer.cs">
+      <DependentUpon>LoadMoreDataButton.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Masked_Edit_Extender_With_validaion.aspx.cs">
+      <DependentUpon>Masked_Edit_Extender_With_validaion.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Masked_Edit_Extender_With_validaion.aspx.designer.cs">
+      <DependentUpon>Masked_Edit_Extender_With_validaion.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ModalPopup.aspx.cs">
+      <DependentUpon>ModalPopup.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ModalPopup.aspx.designer.cs">
+      <DependentUpon>ModalPopup.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="PasswordStrenght.aspx.cs">
+      <DependentUpon>PasswordStrenght.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="PasswordStrenght.aspx.designer.cs">
+      <DependentUpon>PasswordStrenght.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Rating.aspx.cs">
+      <DependentUpon>Rating.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Rating.aspx.designer.cs">
+      <DependentUpon>Rating.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ToggleButton.aspx.cs">
+      <DependentUpon>ToggleButton.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ToggleButton.aspx.designer.cs">
+      <DependentUpon>ToggleButton.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="WaterMarkTextBox.aspx.cs">
+      <DependentUpon>WaterMarkTextBox.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WaterMarkTextBox.aspx.designer.cs">
+      <DependentUpon>WaterMarkTextBox.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="WebForm2.aspx.cs">
+      <DependentUpon>WebForm2.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WebForm2.aspx.designer.cs">
+      <DependentUpon>WebForm2.aspx</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="image\pdf\c langues certificate.pdf" />
+    <Content Include="image\pdf\New Resume.pdf" />
+    <Content Include="image\pdf\papa ayushman.pdf" />
+    <Content Include="image\pdf\ProfResume.pdf" />
+    <Content Include="image\pdf\Resumecompelete.docx" />
+    <Content Include="image\pdf\SQL %28notes%29 %281%29.pdf" />
+    <Content Include="image\pdf\SQL Interview Questions n Answers-Easy.pdf" />
+    <Content Include="image\pdf\SQL Notes by Apna College %281%29.pdf" />
+    <Content Include="image\pdf\umang pan request.pdf" />
+    <None Include="packages.config" />
+    <None Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+    <None Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+  </ItemGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>True</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>65092</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>https://localhost:44320/</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
+    <PropertyGroup>
+      <ErrorText>This project references NuGet package(s) that are missing on this computer. Use NuGet Package Restore to download them.  For more information, see http://go.microsoft.com/fwlink/?LinkID=322105. The missing file is {0}.</ErrorText>
+    </PropertyGroup>
+    <Error Condition="!Exists('..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props'))" />
+  </Target>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
